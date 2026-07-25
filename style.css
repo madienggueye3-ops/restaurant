@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.navbar-brand{
+    font-size:2.5rem;
+}
+
+.nav-link{
+    font-size:2.05rem;
+    margin-left:15px;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#df1414 !important;
+}
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url("pngtree-abstract-blur-coffee-shop-or-cafe-restaurant-interior-image_15683716.jpg");
+    background-size:cover;
+    background-position:center;
+}
+
+.hero h1{
+    text-shadow:2px 2px 8px rgba(0,0,0,.6);
+}
+
+.hero p{
+    max-width:550px;
+}
+
+.btn{
+    border-radius:30px;
+    padding:12px 28px;
+}
+footer{
+    margin-top:80px;
+}
+
+.footer-link{
+    color:#fff;
+    text-decoration:none;
+    display:block;
+    margin:10px 0;
+    transition:.3s;
+}
+
+.footer-link:hover{
+    color:#e50b0b;
+    padding-left:8px;
+}
+
+.social{
+    width:45px;
+    height:45px;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    background:#e50b0b;
+    color:#000;
+    border-radius:50%;
+    text-decoration:none;
+    margin-right:10px;
+    font-size:20px;
+    transition:.3s;
+}
+
+.social:hover{
+    background:hsl(0, 91%, 46%);
+    transform:translateY(-5px);
+}
