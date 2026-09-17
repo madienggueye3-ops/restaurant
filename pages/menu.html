@@ -1,155 +1,345 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Restaurant Délice</title>
+    <meta name="description" content="Découvrez le menu du Restaurant Délice à Saint-Louis : entrées, plats, desserts et boissons.">
+    <title>Menu | Restaurant Délice</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
 
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="../index.html">
+            <img src="../images/logo.jpg" alt="Restaurant Délice" class="logo">
+            <span>Restaurant <strong>Délice</strong></span>
+        </a>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reservation.html">Réservation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="galerie.html">Galerie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="page-hero menu-hero">
+    <div class="container text-center">
+        <span class="hero-badge">Notre carte</span>
+        <h1>Découvrez notre <span>Menu</span></h1>
+        <p>Des saveurs authentiques préparées avec passion</p>
+    </div>
+</header>
+
+<main>
+
+    <section class="menu-section py-5">
         <div class="container">
 
-           <a class="navbar-brand d-flex align-items-center" href="menu.html">
-    <img src="images.jpg" alt="Logo Restaurant Délice&Fast Food" width="60" height="60" class="me-2 rounded-circle">
-    <span class="fw-bold text-white">Restaurant Délice</span>
-</a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#menu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="menu">
-
-                <ul class="navbar-nav ms-auto">
-
-                    <li class="nav-item">
-                        <a class="nav-link active" href="../index.html">Accueil</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/menu.html">Menu</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/reservation.html">Réservation</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/galerie.html">Galerie</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/contact.html">Contact</a>
-                    </li>
-
-                </ul>
-
+            <div class="section-heading text-center mb-5">
+                <span>À la carte</span>
+                <h2>Nos spécialités</h2>
+                <p>Une sélection de plats savoureux pour satisfaire toutes vos envies.</p>
             </div>
 
-        </div>
-    </nav>
-    <!-- ---------------------------------------------------------------
-        ---------------------------------------------------------------- 
-        ---------------------------------------------------------------- 
-        ----------------------------------------------------------------
-       --------------- AJOUTER VOS CONTENU ----------------------------
-        -----------------------------------------------------------------
-        -----------------------------------------------------------------
-        -------------------------------------------------------------------- 
-    
-    -->
-     <footer class="bg-dark text-white pt-5 pb-3">
-
-    <div class="container">
-
-        <div class="row">
-
-            <div class="col-md-4 mb-4">
-
-                <h3 class="text-danger">Restaurant Délice</h3>
-
-                <p>
-                    Découvrez une cuisine savoureuse préparée avec des produits
-                    frais dans une ambiance chaleureuse.
-                </p>
-
-            </div>
-
-            <div class="col-md-4 mb-4">
-
-                <h4 class="text-danger">Liens rapides</h4>
-
-                <ul class="list-unstyled">
-
-                    <li><a href="index.html" class="footer-link">Accueil</a></li>
-
-                    <li><a href="menu.html" class="footer-link">Menu</a></li>
-
-                    <li><a href="reservation.html" class="footer-link">Réservation</a></li>
-
-                    <li><a href="galerie.html" class="footer-link">Galerie</a></li>
-
-                    <li><a href="contact.html" class="footer-link">Contact</a></li>
-
-                </ul>
-
-            </div>
-
-            <div class="col-md-4 mb-4">
-
-                <h4 class="text-danger">Contact</h4>
-
-                <p><i class="bi bi-geo-alt-fill"></i> Saint-Louis, Sénégal</p>
-
-                <p><i class="bi bi-telephone-fill"></i> +221 78 270 58 24</p>
-
-                <p><i class="bi bi-envelope-fill"></i> restaurant@delice.com</p>
-
-                <div class="mt-3">
-
-                    <a href="#" class="social"><i class="bi bi-facebook"></i></a>
-
-                    <a href="#" class="social"><i class="bi bi-instagram"></i></a>
-
-                    <a href="#" class="social"><i class="bi bi-whatsapp"></i></a>
-
-                    <a href="#" class="social"><i class="bi bi-linkedin"></i></a>
-
+            <div class="menu-category mb-5">
+                <div class="category-title text-center mb-4">
+                    <h3><i class="bi bi-egg-fried"></i> Entrées</h3>
                 </div>
 
+                <div class="row g-4">
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="../images/plat1.jpg" alt="Salade fraîche">
+                            </div>
+                            <div class="menu-content">
+                                <div class="d-flex justify-content-between gap-3">
+                                    <h4>Salade Fraîche</h4>
+                                    <span class="price">2 000 FCFA</span>
+                                </div>
+                                <p>Une salade fraîche composée de légumes croquants et d'une sauce maison.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="../images/plat2.jpg" alt="Nems maison">
+                            </div>
+                            <div class="menu-content">
+                                <div class="d-flex justify-content-between gap-3">
+                                    <h4>Nems Maison</h4>
+                                    <span class="price">2 500 FCFA</span>
+                                </div>
+                                <p>De délicieux nems croustillants servis avec une sauce savoureuse.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="../images/plat3.jpg" alt="Assiette Délice">
+                            </div>
+                            <div class="menu-content">
+                                <div class="d-flex justify-content-between gap-3">
+                                    <h4>Assiette Délice</h4>
+                                    <span class="price">3 000 FCFA</span>
+                                </div>
+                                <p>Une entrée généreuse idéale pour découvrir plusieurs saveurs.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="menu-category mb-5">
+                <div class="category-title text-center mb-4">
+                    <h3><i class="bi bi-fire"></i> Plats principaux</h3>
+                </div>
+
+                <div class="row g-4">
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="menu-card featured-dish">
+                            <div class="menu-image">
+                                <img src="../images/plat1.jpg" alt="Poulet Braisé">
+                                <span class="dish-badge">Populaire</span>
+                            </div>
+                            <div class="menu-content">
+                                <div class="d-flex justify-content-between gap-3">
+                                    <h4>Poulet Braisé</h4>
+                                    <span class="price">4 500 FCFA</span>
+                                </div>
+                                <p>Poulet braisé accompagné de frites, salade fraîche et sauce maison.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="../images/plat2.jpg" alt="Pizza Délice">
+                                <span class="dish-badge">Chef</span>
+                            </div>
+                            <div class="menu-content">
+                                <div class="d-flex justify-content-between gap-3">
+                                    <h4>Pizza Délice</h4>
+                                    <span class="price">5 000 FCFA</span>
+                                </div>
+                                <p>Une pizza généreuse garnie d'ingrédients frais et préparée à la commande.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="menu-card">
+                            <div class="menu-image">
+                                <img src="../images/plat3.jpg" alt="Burger Délice">
+                            </div>
+                            <div class="menu-content">
+                                <div class="d-flex justify-content-between gap-3">
+                                    <h4>Burger Délice</h4>
+                                    <span class="price">3 500 FCFA</span>
+                                </div>
+                                <p>Un burger gourmand accompagné de frites croustillantes et d'une sauce maison.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="menu-category mb-5">
+                <div class="category-title text-center mb-4">
+                    <h3><i class="bi bi-cake2"></i> Desserts</h3>
+                </div>
+
+                <div class="row g-4">
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="menu-card">
+                            <div class="menu-content">
+                                <div class="d-flex justify-content-between gap-3">
+                                    <h4>Salade de fruits</h4>
+                                    <span class="price">1 500 FCFA</span>
+                                </div>
+                                <p>Un mélange de fruits frais et de saison, léger et rafraîchissant.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="menu-card">
+                            <div class="menu-content">
+                                <div class="d-flex justify-content-between gap-3">
+                                    <h4>Fondant au chocolat</h4>
+                                    <span class="price">2 000 FCFA</span>
+                                </div>
+                                <p>Un délicieux dessert au chocolat au cœur fondant et gourmand.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="menu-card">
+                            <div class="menu-content">
+                                <div class="d-flex justify-content-between gap-3">
+                                    <h4>Crème glacée</h4>
+                                    <span class="price">1 500 FCFA</span>
+                                </div>
+                                <p>Plusieurs parfums disponibles pour terminer votre repas en douceur.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <div class="category-title text-center mb-4">
+                    <h3><i class="bi bi-cup-straw"></i> Boissons</h3>
+                </div>
+
+                <div class="row g-4">
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="menu-card">
+                            <div class="menu-content">
+                                <div class="d-flex justify-content-between gap-3">
+                                    <h4>Jus de Bissap</h4>
+                                    <span class="price">1 000 FCFA</span>
+                                </div>
+                                <p>Une boisson traditionnelle fraîche et naturellement parfumée.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="menu-card">
+                            <div class="menu-content">
+                                <div class="d-flex justify-content-between gap-3">
+                                    <h4>Jus de Gingembre</h4>
+                                    <span class="price">1 000 FCFA</span>
+                                </div>
+                                <p>Une boisson fraîche et relevée préparée avec du gingembre.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="menu-card">
+                            <div class="menu-content">
+                                <div class="d-flex justify-content-between gap-3">
+                                    <h4>Eau minérale</h4>
+                                    <span class="price">500 FCFA</span>
+                                </div>
+                                <p>Une bouteille d'eau fraîche pour accompagner votre repas.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="reservation-cta py-5">
+        <div class="container">
+            <div class="cta-box text-center">
+                <span>Une envie de nous rejoindre ?</span>
+                <h2>Réservez votre table</h2>
+                <p>Profitez d'un moment agréable autour de plats préparés avec passion.</p>
+                <a href="reservation.html" class="btn btn-main">
+                    Réserver maintenant
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row g-4">
+
+            <div class="col-lg-4">
+                <div class="footer-brand">
+                    <h3>Restaurant <span>Délice</span></h3>
+                    <p>Votre restaurant de référence à Saint-Louis pour découvrir une cuisine savoureuse et généreuse.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <h4>Contact</h4>
+                <ul class="footer-contact">
+                    <li>
+                        <i class="bi bi-geo-alt"></i>
+                        Saint-Louis, Sénégal
+                    </li>
+                    <li>
+                        <i class="bi bi-telephone"></i>
+                        +221 78 270 58 24
+                    </li>
+                    <li>
+                        <i class="bi bi-envelope"></i>
+                        restaurant@delice.com
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4">
+                <h4>Suivez-nous</h4>
+                <div class="social-links">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://wa.me/221782705824" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                </div>
             </div>
 
         </div>
 
-        <hr class="border-secondary">
-
-        <div class="text-center">
-
-            <p class="mb-0">
-                © 2026 Restaurant Délice | Tous droits réservés.
-            </p>
-
+        <div class="footer-bottom">
+            <p>© 2026 Restaurant Délice. Tous droits réservés.</p>
         </div>
-
     </div>
-
 </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<a href="https://wa.me/221782705824?text=Bonjour%20Restaurant%20Délice%2C%20je%20souhaite%20avoir%20plus%20d'informations." class="whatsapp-float" target="_blank">
+    <i class="bi bi-whatsapp"></i>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
-
 </html>

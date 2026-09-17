@@ -1,156 +1,347 @@
+```html
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Restaurant Délice</title>
+    <meta name="description" content="Restaurant Délice - Découvrez une cuisine savoureuse préparée avec des produits frais.">
+    <title>Restaurant Délice | Accueil</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
-        <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="images/logo.jpg" alt="Restaurant Délice" class="logo">
+            <span>Délice</span>
+        </a>
 
-           <a class="navbar-brand d-flex align-items-center" href="index.html">
-    <img src="images.jpg" alt="Logo Restaurant Délice&Fast Food" width="60" height="60" class="me-2 rounded-circle">
-    <span class="fw-bold text-white">Restaurant Délice</span>
-</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#menu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
 
-            <div class="collapse navbar-collapse" id="menu">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Accueil</a>
+                </li>
 
-                <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/menu.html">Menu</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Accueil</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/reservation.html">Réservation</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="/pages/menu.html">Menu</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/galerie.html">Galerie</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="/pages/reservation.html">Réservation</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/contact.html">Contact</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="/pages/galerie.html">Galerie</a>
-                    </li>
+            </ul>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/contact.html">Contact</a>
-                    </li>
-
-                </ul>
-
-            </div>
-
+            <a href="pages/reservation.html" class="btn btn-danger nav-btn ms-lg-4">
+                <i class="bi bi-calendar-check me-2"></i>Réserver
+            </a>
         </div>
-    </nav>
+
+    </div>
+</nav>
 
 
-    <section class="hero d-flex align-items-center">
+<header class="hero">
 
-        <div class="container">
+    <div class="hero-overlay"></div>
 
-            <div class="row align-items-center">
+    <div class="container hero-content">
+        <div class="row">
+            <div class="col-lg-8">
 
-                <div class="col-lg-6 text-white">
+                <span class="hero-badge">
+                    <i class="bi bi-stars me-2"></i>
+                    Bienvenue chez Restaurant Délice
+                </span>
 
-                    <h1 class="display-3 fw-bold">
-                        Découvrez les Saveurs de Notre Restaurant
-                    </h1>
+                <h1>
+                    Le goût qui fait
+                    <span>la différence</span>
+                </h1>
 
-                    <p class="lead mt-4">
-                        Des plats délicieux préparés avec des ingrédients frais,
-                        dans une ambiance chaleureuse et conviviale.
-                    </p>
+                <p>
+                    Découvrez une cuisine savoureuse préparée avec des produits
+                    frais dans une ambiance chaleureuse et conviviale.
+                </p>
 
-                    <a href="menu.html" class="btn btn-danger btn-lg mt-3 me-2">
-                        Voir le Menu
+                <div class="hero-buttons">
+
+                    <a href="pages/menu.html" class="btn btn-danger btn-lg">
+                        <i class="bi bi-egg-fried me-2"></i>
+                        Découvrir notre menu
                     </a>
 
-                    <a href="reservation.html" class="btn btn-outline-light btn-lg mt-3">
+                    <a href="pages/reservation.html" class="btn btn-outline-light btn-lg">
+                        <i class="bi bi-calendar-check me-2"></i>
                         Réserver une table
                     </a>
 
                 </div>
 
+                <div class="hero-info">
+
+                    <div>
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <span>Saint-Louis, Sénégal</span>
+                    </div>
+
+                    <div>
+                        <i class="bi bi-clock-fill"></i>
+                        <span>Ouvert aujourd'hui</span>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <a href="#presentation" class="scroll-down">
+        <i class="bi bi-chevron-down"></i>
+    </a>
+
+</header>
+
+
+<section id="presentation" class="presentation section-padding">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6">
+
+                <div class="image-wrapper">
+
+                    <img src="images/restaurant.jpg"
+                         alt="Restaurant Délice"
+                         class="img-fluid">
+
+                    <div class="experience-card">
+                        <strong>100%</strong>
+                        <span>Passion<br>et qualité</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <div class="section-label">
+                    À PROPOS DE NOUS
+                </div>
+
+                <h2 class="section-title">
+                    Une cuisine faite
+                    <span>avec passion</span>
+                </h2>
+
+                <p class="section-text">
+                    Restaurant Délice vous accueille dans un cadre agréable
+                    et chaleureux. Notre équipe prépare chaque plat avec
+                    passion afin de vous offrir une expérience culinaire
+                    exceptionnelle.
+                </p>
+
+                <p class="section-text">
+                    Nous sélectionnons des produits frais et de qualité
+                    pour garantir des repas savoureux à nos clients.
+                </p>
+
+                <div class="features">
+
+                    <div class="feature">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Produits frais et de qualité</span>
+                    </div>
+
+                    <div class="feature">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Cuisine préparée avec passion</span>
+                    </div>
+
+                    <div class="feature">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Accueil chaleureux</span>
+                    </div>
+
+                </div>
+
+                <a href="pages/menu.html" class="btn btn-danger mt-3">
+                    Découvrir notre cuisine
+                    <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+
             </div>
 
         </div>
 
-    </section>
-    <footer class="bg-dark text-white pt-5 pb-3">
+    </div>
+
+</section>
+
+
+<section class="specialties section-padding">
 
     <div class="container">
 
-        <div class="row">
+        <div class="section-heading text-center">
 
-            <div class="col-md-4 mb-4">
+            <div class="section-label">
+                NOS SPÉCIALITÉS
+            </div>
 
-                <h3 class="text-danger">Restaurant Délice</h3>
+            <h2 class="section-title">
+                Nos plats <span>populaires</span>
+            </h2>
 
-                <p>
-                    Découvrez une cuisine savoureuse préparée avec des produits
-                    frais dans une ambiance chaleureuse.
-                </p>
+            <p>
+                Découvrez quelques-unes de nos meilleures spécialités.
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="food-card">
+
+                    <div class="food-image">
+
+                        <img src="images/plat1.jpg"
+                             alt="Poulet braisé">
+
+                        <span class="food-badge">Nouveau</span>
+
+                    </div>
+
+                    <div class="food-content">
+
+                        <div class="food-icon">
+                            <i class="bi bi-fire"></i>
+                        </div>
+
+                        <h3>Poulet Braisé</h3>
+
+                        <p>
+                            Poulet grillé accompagné de frites et
+                            d'une délicieuse sauce maison.
+                        </p>
+
+                        <div class="food-bottom">
+
+                            <strong>4 500 FCFA</strong>
+
+                            <a href="pages/menu.html">
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
 
             </div>
 
-            <div class="col-md-4 mb-4">
 
-                <h4 class="text-danger">Liens rapides</h4>
+            <div class="col-md-6 col-lg-4">
 
-                <ul class="list-unstyled">
+                <div class="food-card">
 
-                    <li><a href="index.html" class="footer-link">Accueil</a></li>
+                    <div class="food-image">
 
-                    <li><a href="menu.html" class="footer-link">Menu</a></li>
+                        <img src="images/plat2.jpg"
+                             alt="Pizza Délice">
 
-                    <li><a href="reservation.html" class="footer-link">Réservation</a></li>
+                    </div>
 
-                    <li><a href="galerie.html" class="footer-link">Galerie</a></li>
+                    <div class="food-content">
 
-                    <li><a href="contact.html" class="footer-link">Contact</a></li>
+                        <div class="food-icon">
+                            <i class="bi bi-pie-chart-fill"></i>
+                        </div>
 
-                </ul>
+                        <h3>Pizza Délice</h3>
+
+                        <p>
+                            Une pizza généreuse préparée avec des
+                            ingrédients frais et savoureux.
+                        </p>
+
+                        <div class="food-bottom">
+
+                            <strong>5 000 FCFA</strong>
+
+                            <a href="pages/menu.html">
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
 
             </div>
 
-            <div class="col-md-4 mb-4">
 
-                <h4 class="text-danger">Contact</h4>
+            <div class="col-md-6 col-lg-4">
 
-                <p><i class="bi bi-geo-alt-fill"></i> Saint-Louis, Sénégal</p>
+                <div class="food-card">
 
-                <p><i class="bi bi-telephone-fill"></i> +221 78 270 58 24</p>
+                    <div class="food-image">
 
-                <p><i class="bi bi-envelope-fill"></i> restaurant@delice.com</p>
+                        <img src="images/plat3.jpg"
+                             alt="Burger Délice">
 
-                <div class="mt-3">
+                    </div>
 
-                    <a href="#" class="social"><i class="bi bi-facebook"></i></a>
+                    <div class="food-content">
 
-                    <a href="#" class="social"><i class="bi bi-instagram"></i></a>
+                        <div class="food-icon">
+                            <i class="bi bi-basket-fill"></i>
+                        </div>
 
-                    <a href="#" class="social"><i class="bi bi-whatsapp"></i></a>
+                        <h3>Burger Délice</h3>
 
-                    <a href="#" class="social"><i class="bi bi-linkedin"></i></a>
+                        <p>
+                            Burger maison avec viande fraîche,
+                            fromage, légumes et sauce spéciale.
+                        </p>
+
+                        <div class="food-bottom">
+
+                            <strong>3 500 FCFA</strong>
+
+                            <a href="pages/menu.html">
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
@@ -158,22 +349,61 @@
 
         </div>
 
-        <hr class="border-secondary">
+        <div class="text-center mt-5">
 
-        <div class="text-center">
-
-            <p class="mb-0">
-                © 2026 Restaurant Délice | Tous droits réservés.
-            </p>
+            <a href="pages/menu.html" class="btn btn-outline-danger btn-lg">
+                Voir tout le menu
+                <i class="bi bi-arrow-right ms-2"></i>
+            </a>
 
         </div>
 
     </div>
 
-</footer>
+</section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-</body>
+<section class="services section-padding">
 
-</html>
+    <div class="container">
+
+        <div class="section-heading text-center">
+
+            <div class="section-label">
+                NOS SERVICES
+            </div>
+
+            <h2 class="section-title">
+                Pourquoi choisir <span>Restaurant Délice ?</span>
+            </h2>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        <i class="bi bi-egg-fried"></i>
+                    </div>
+
+                    <h3>Cuisine savoureuse</h3>
+
+                    <p>
+                        Des plats préparés avec soin et passion.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        <i class
+```
